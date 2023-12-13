@@ -1,0 +1,114 @@
+.pricing {
+    padding-bottom: 120px;
+    position: relative;
+  }
+  
+  .gradient-text {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 50px;
+    background: linear-gradient(#8888CF, #FE67AF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+  }
+  
+  .price {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 184%;
+    text-align: right;
+    vertical-align: middle;
+    color: #FE67AF;
+    margin-top: 25px;
+  
+    span {
+      font-size: 42px;
+      font-weight: 500;
+    }
+  }
+  
+  .under-price-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #696584;
+    margin-top: 46px;
+    margin-bottom: 0;
+  
+    + div {
+      margin-top: 50px;
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .gradient-text {
+      font-size: 39px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+
+    .pricing{
+      padding-bottom: 90px;
+    }
+
+    .price{
+      margin-top: 0;
+    }
+
+    .gradient-text {
+      font-size: 25px;
+    }
+  
+    .under-price-text {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .pricing {
+      position: relative;
+      padding: 0 0 35px;
+    }
+  
+    .price {
+      position: absolute;
+      font-size: 20px;
+      right: 25px;
+      top: 35px;
+      margin-top:25px;
+  
+      span {
+        font-size: 30px;
+      }
+    }
+  
+    .under-price-text {
+      margin-top: 0;
+  
+      + div {
+        margin-top: 25px;
+      }
+    }
+  
+    .gradient-text {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  
+    .under-price-text {
+      font-size: 12px;
+      margin-top: 0;
+    }
+  }
+
+ @media(max-width:576px){
+   .pricing{
+     padding-top:0;
+   }
+ }

@@ -1,0 +1,10 @@
+//import fonts here
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap");
+
+@font-face {
+  font-family: "my-font";
+  src: url("../../assets/fonts/my-font/my-font.eot") format("embedded-opentype"), url("../../assets/fonts/my-font/my-font.woff2") format("woff2"),
+    url("../../assets/fonts/my-font/my-font.woff") format("woff"), url("../../assets/fonts/my-font/my-font.ttf") format("truetype"),
+    url("../../assets/fonts/my-font/my-font.svg") format("svg");
+}

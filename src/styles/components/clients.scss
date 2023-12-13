@@ -1,0 +1,150 @@
+.clients {
+    padding: 60px 0 120px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .testimonial {
+    margin-top: 20px;
+    text-align: center;
+  
+    img {
+      width: 116px !important;
+      height: 116px;
+    }
+  
+    h6 {
+      font-size: 20px;
+      color: #696584;
+      margin-top: 22px;
+      margin-bottom: 11px;
+    }
+  
+    p {
+      font-size: 16px;
+      color: #696584;
+      width: 730px;
+      margin: auto;
+    }
+  
+    h5 {
+      font-size: 22px;
+      color: #0B0450;
+    }
+  }
+  
+  .carousel {
+    .carousel-status {
+      display: none;
+    }
+  
+    .slide {
+      height: 300px;
+      background: transparent !important;
+    }
+  
+    .control-dots, &.carousel-slider + .carousel {
+      display: none;
+    }
+  
+    .control-next.control-arrow::before {
+      border-left: 8px solid #000 !important;
+    }
+  
+    .control-prev.control-arrow::before {
+      border-right: 8px solid #000 !important;
+    }
+  
+    &.carousel-slider .control-arrow {
+      &:hover {
+        background: none !important;
+      }
+  
+      margin-top: 55px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+
+    .clients{
+      padding-bottom: 80px;;
+    }
+
+    .carousel {
+      &.carousel-slider .control-arrow {
+        height: 30px;
+        position: absolute;
+        top: 60px !important;
+        bottom: 10px !important;
+      }
+  
+      .slide {
+        height: 340px !important;
+      }
+    }
+  
+    .testimonial p {
+      width: 650px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .clients {
+      padding: 50px 0 62px;
+  
+      h2 {
+        font-size: 25px;
+        line-height: 30px;
+        margin: 24px 0 20px 0;
+      }
+    }
+    .carousel .control-prev.control-arrow, .carousel .control-next.control-arrow{
+      top:5px !important;
+    }
+    .testimonial {
+      margin-top: 0;
+  
+      img {
+        width: 60px !important;
+        height: 60px;
+      }
+  
+      h6 {
+        font-size: 18px;
+      }
+  
+      p {
+        font-size: 12px;
+        width: 289px;
+      }
+  
+      h5 {
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+    }
+  
+    .carousel .slide {
+      height: 270px !important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+
+    .clients{
+      padding-top:50px;
+
+      .carousel .slide {
+        height: 240px !important;
+      }
+    }
+    .clients h2 {
+      font-size: 18px;
+      line-height: 30px;
+      margin: 24px 0 20px 0;
+    }
+  
+    .testimonial h6 {
+      font-size: 16px;
+    }
+  }

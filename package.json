@@ -1,0 +1,38 @@
+{
+  "name": "landing",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reach/menu-button": "^0.7.4",
+    "classnames": "^2.2.6",
+    "rc-menu": "^7.5.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-responsive-carousel": "^3.1.51",
+    "react-scripts": "3.2.0",
+    "react-slick": "^0.25.2",
+    "sass": "^1.69.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "copy_to_env": "pscp -pw 5gtaa$6A -r ./build/* xbanner@192.168.11.25:/var/www/%npm_package_name%"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

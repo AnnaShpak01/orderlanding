@@ -1,0 +1,150 @@
+
+  
+  [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "my-font";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 44px;
+    border-radius: 50%;
+    height: 44px;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: 11px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 12px;
+    font-size: 20px;
+    box-sizing: border-box;
+  }
+  
+  .icon-linkedin:before {
+    content: '\f0e1';
+    background: #E3E6FF;
+    margin-left: 0;
+  }
+  
+  .icon-facebook:before {
+    content: '\f300';
+    background: #FF9A9A;
+  }
+  
+  .icon-twitter-bird:before {
+    content: '\f303';
+    background: #8888CF;
+  }
+  
+  .footer {
+    background: #0B0450;
+    padding: 70px 0;
+    position: relative;
+  
+    .navbar-brand {
+      color: #FFF;
+    }
+  
+    p.footer-text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 165%;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+      margin: 0;
+      padding-left: 25px;
+    }
+  }
+  
+  .social-icons-block {
+    margin-top: 20px;
+    display: inline-block;
+    float: right;
+  
+    div {
+      display: inline-block;
+      margin-bottom: 46px;
+    }
+  }
+  
+  .rights-reserved {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+  }
+  
+  @media(max-width:991px){
+    .footer p.footer-text{
+      font-size:16px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .footer {
+      padding: 23px 0;
+    }
+  
+    .navbar-brand {
+      font-size: 20px;
+    }
+  
+    .footer p.footer-text {
+      padding-left: 0;
+      margin-top: 23px;
+      font-size: 14px;
+    }
+  
+    .rights-reserved {
+      font-size: 10px;
+    }
+  
+    .footer p.footer-text {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  
+    [class^="icon-"]::before, [class*=" icon-"]::before {
+      margin-right: 25px;
+      width: 35px;
+      height: 35px;
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .footer {
+      .social-icons-block {
+        float: none;
+        margin-top: 23px;
+      }
+  
+      .response-center {
+        text-align: center;
+      }
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 18px;
+    }
+  
+    .footer p.footer-text {
+      font-size: 12px;
+    }
+
+    .social-icons-block{
+      margin-top: 38px !important;
+    
+      .icon-social{
+        margin-bottom:22px;
+      }
+
+    }
+
+  }

@@ -1,0 +1,331 @@
+.banner {
+    background: linear-gradient(81.29deg, rgba(2, 2, 153, 0.1) 3.27%, rgba(251, 44, 143, 0.1) 98.92%);
+    position: relative;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 30rem solid #FFF;
+      border-left: 100rem solid transparent;
+    }
+  }
+  
+  .banner-block {
+    padding-top: 45px;
+  }
+
+  .under-h1{
+    margin-top:40px;
+    margin-bottom:40px;
+  }
+  
+  .text-block {
+    margin-top: 52px;
+    margin-bottom: 43px;
+    padding-right: 20px;
+  }
+  
+  .img-imitation {
+    margin: 40px 29px 22px 43px;
+    height: 394px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 20px rgba(2, 2, 153, 0.15);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 5;
+  
+    &::before {
+      content: '';
+      width: 112%;
+      height: 105%;
+      background-color: #FFF;
+      position: absolute;
+      top: -40px;
+      left: -29px;
+      z-index: 0;
+      box-shadow: 0px 20px 20px rgba(2, 2, 153, 0.15);
+      border-radius: 20px;
+      margin-bottom: 40px;
+      background-image: url('../../img/banner.svg');
+      background-size: 90%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  
+  .brands-block {
+    margin: auto;
+    width: 780px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+  
+    + .brands-block {
+      width: 550px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .brand {
+    display: flex;
+    background-color: #0B0450;
+    box-shadow: 0px 15px 20px rgba(2, 2, 153, 0.15);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 95px;
+    height: 95px;
+  }
+  
+  @media (max-width: 1199px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .text-block {
+      margin-top: 0;
+  
+      p {
+        font-size: 16px;
+      }
+  
+      h1 {
+        font-size: 29px;
+        line-height: 45px;
+      }
+    }
+  
+    .img-imitation {
+      height: 285px;
+  
+      &::before {
+        width: 120%;
+        left: -25px;
+      }
+    }
+  
+    .banner::before {
+      top: 335px;
+    }
+  
+    .brands-block {
+      width: 100%;
+  
+      .brand:nth-child(6) {
+        display: none;
+      }
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .banner-block {
+      padding-top: 0;
+    }
+  
+    .text-block {
+      margin-top: 0;
+    }
+  
+    .navbar-brand {
+      font-size: 20px;
+    }
+  
+    .banner-block h1 {
+      font-size: 27px;
+      line-height: 30px;
+    }
+  
+    .text-block p {
+      font-size: 14px;
+    }
+  
+    .img-imitation {
+      height: auto;
+      width: 100%;
+      margin: 80px 0 22px 0;
+  
+      &::before {
+        width:100%;
+        height:335px;
+        left: 0;
+      }
+    }
+  
+    .brands-section{
+      margin-top: 300px;
+      background-color: #FFF;
+    }
+
+    .brands-block {
+      + .brands-block {
+        width: 415px;
+      }
+  
+      .brand:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .banner::before {
+      top: 173.0px;
+      border-bottom: 480px solid #FFF;
+      border-left: 900px solid transparent;
+    }
+  
+    .banner-block h1 {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  
+    .text-block {
+      padding-right: 0;
+      margin-bottom: 20px;
+  
+      p {
+        font-size: 12px;
+        margin-top: 20px;
+        margin-right: 20px;
+      }
+    }
+  
+    .img-imitation {
+      height: 170px;
+      margin:auto;
+      margin-top: 70px;
+      width:290px;
+
+      &::before {
+        left: 0;
+        width: 100%;
+        height: 130%;
+      }
+
+   
+    }
+  
+    .brands-section{
+      margin-top:25px;
+    }
+    .brands-block {
+      display:none;
+      // width: 218px;
+      // margin-top: 25px;
+  
+      // + .brands-block {
+      //   width: 100px;
+      // }
+  
+      // .brand {
+      //   width: 45px;
+      //   height: 45px;
+      //   border-radius: 5px;
+  
+      //   &:nth-child(2) {
+      //     display: none;
+      //   }
+      // }
+  
+      // + .brands-block .brand:nth-child(3) {
+      //   display: none;
+      // }
+    }
+
+    .under-h1{
+      margin-bottom:20px;
+    }
+  }
+.icon-brand{
+  background-image: url("../../img/sprint1x.png");
+  width: 53px;
+  height: 53px;
+  margin: auto;
+}
+
+.icon1{
+  background-position: 0 0;
+}
+
+.icon2{
+  background-position: -53px 0;
+}
+
+.icon3{
+  background-position: -106px 0;
+}
+
+.icon4{
+  background-position: -159px 0;
+}
+
+.icon5{
+  background-position: -212px 0;
+}
+
+.icon6{
+  background-position: -263px 0;
+  width:52px;
+}
+
+.icon7{
+  background-position: -315px 0;
+}
+
+.icon8{
+  background-position: 0 -53px;
+}
+
+.icon9{
+  background-position: -53px -53px;
+}
+
+.icon10{
+  background-position: -106px -53px;
+}
+
+.icon11{
+  background-position: -159px -53px;
+}
+
+.icon12{
+  background-position: -212px -53px;
+}
+
+@media(max-width:576px){
+  .icon-brand{
+    background-size: 245px 71px;
+    width:35px;
+    height:35px;
+  }
+  .icon4{
+    background-position: -141px 0;  
+  }
+
+  .icon7 {
+    background-position: -316px 0;
+  }
+
+  .icon8 {
+    background-position: 0 -36px;
+}
+  .icon11 {
+    background-position: -71px -107px;
+  }
+
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1300px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1300px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1300px), only screen and (min-device-pixel-ratio: 2) and (min-width: 1300px), only screen and (min-resolution: 192dpi) and (min-width: 1300px), only screen and (min-resolution: 2dppx) and (min-width: 1300px) {
+  .icon-brand {
+      background: url('../../img/sprint2x.png');
+      background-size: 368px 106px;
+  }
+}
